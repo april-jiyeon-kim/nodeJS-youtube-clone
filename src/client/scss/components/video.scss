@@ -11,13 +11,13 @@
     display: flex;
     .video-mixin__avatar {
       margin: 10px;
-      width: 32px;
-      height: 32px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
-      background-color: #bf360c;
+      background-color: $color-dark-red;
       color: white;
       text-align: center;
-      line-height: 32px;
+      line-height: 36px;
     }
     div.video-mixin__right {
       margin: 10px;

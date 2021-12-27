@@ -1,0 +1,14 @@
+#videoRecorder {
+  display: flex;
+  flex-direction: column;
+  video {
+    width: 50%;
+    margin: auto;
+  }
+  button {
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
