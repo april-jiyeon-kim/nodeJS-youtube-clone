@@ -1,6 +1,7 @@
 header
     a(href="/").header__logo
         i.fab.fa-youtube
+        span.header__title ChopinTube
     nav
         ul
             li
@@ -15,8 +16,8 @@ header
                     a(href="/users/logout")  Log Out
                 li
                     a(href=`/users/${loggedInUser._id}`)
-                        if loggedInUser.avatarUrl === ""
-                            span 😀
+                        if !loggedInUser.avatarUrl || loggedInUser.avatarUrl === ""
+                            span.header__avatar-text #{loggedInUser.username.substr(0,1)}
                         else
                             if loggedInUser.avatarUrl
                                 if loggedInUser.avatarUrl.includes("github")

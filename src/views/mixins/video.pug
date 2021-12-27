@@ -2,7 +2,12 @@ mixin video(video)
     a(href=`/videos/${video.id}`).video-mixin
         div.video-mixin__thumb
         div.video-mixin__data
-            span.video-mixin__title=video.title
-            div.video-mixin__meta
-                span #{video.owner.name} • 
-                span #{video.meta.views} 회
+            if video.owner.avatarUrl
+                img.video-mixin__avatar(src=video.owner.avatarUrl)
+            else 
+                span.video-mixin__avatar J
+            div.video-mixin__right
+                span.video-mixin__title=video.title
+                div.video-mixin__meta
+                    span #{video.owner.name}
+                    span #{video.meta.views} 회

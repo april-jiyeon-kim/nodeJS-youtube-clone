@@ -6,6 +6,11 @@ header {
   .header__logo {
     color: $red;
     font-size: 38px;
+    .header__title {
+      color: black;
+      font-weight: $weight-semi-bold;
+      font-size: 34px;
+    }
   }
   ul {
     display: flex;
@@ -23,7 +28,7 @@ header {
   }
   .header__btn {
     background-color: white;
-    color: $bg;
+    color: $color-black;
     padding: 5px 10px;
     border-radius: 5px;
   }
@@ -31,5 +36,14 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+  }
+  .header__avatar-text {
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: #bf360c;
+    width: 32px;
+    height: 32px;
+    line-height: 16px;
+    color: white;
   }
 }
